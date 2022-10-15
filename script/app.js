@@ -69,6 +69,7 @@ let placeSunAndStartMoving = (totalMinutes, sunrise) => {
   if (percentage >= 100 || percentage <= 0) {
     clearInterval(interval);
     document.querySelector('.js-html').classList.add('is-night');
+    minutesLeft.textContent = 0;
   }
 };
 

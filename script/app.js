@@ -27,6 +27,7 @@ let updateSun = (percentage, time) => {
   } else if (percentage >= 100) {
     percentage = 0;
     test = 0;
+    sun.innerHTML = '';
   } else {
     test = percentage * 2;
   }
